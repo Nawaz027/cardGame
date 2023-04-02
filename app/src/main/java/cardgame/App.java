@@ -1,7 +1,7 @@
 
 package cardgame;
 
-import cardgame.entities.*;
+import cardgame.entities.Deck;
 
 public class App {
 
