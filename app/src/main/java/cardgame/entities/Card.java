@@ -19,12 +19,21 @@ public class Card {
         return rank.getRank();
     }
 
+    public void flipCard() {
+        if (!isFaceup) {
+            isFaceup = true;
+        } else {
+            isFaceup = false;
+        }
+        
+    }
+
 
     @Override
     public String toString() {
         String str = "";
         if (isFaceup) {
-            str += rank.getRank() + " of " + suit.printSuit();
+            str += rank.printRank() + " of " + suit.printSuit();
         }
         else {
             str = "Face Down (Nothing to see)";
